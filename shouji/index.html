@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>手机端</title>
+        <link rel="stylesheet" type="text/css" href="css/common.css">
+        <link rel="stylesheet" type="text/css" href="font_1166239_ioffhv0ke7/iconfont.css">
+        <meta id="viewport" name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1">
+		<script>
+        	window.onload = window.onresize = function(){
+            var view_width = document.getElementsByTagName('html')[0].getBoundingClientRect().width;
+
+            var _html = document.getElementsByTagName('html')[0];
+            view_width>640?_html.style.fontSize = 640 / 16 + 'px':_html.style.fontSize = view_width / 16 + 'px';
+        }
+    	</script>
+        <style type="text/css">
+        	.box{
+        		background-color:#E8E8E8;
+        		height:47.3rem;
+        		width:16rem;
+        	}
+        	.nav{
+			     width:100%;
+			     height:5.2rem;
+			     background-color:#38474E;
+			}
+			.nav1{
+			     background-color:rgb(0, 0, 0,0.5);
+			     height:0.9rem;
+			}
+			.nav_right1 span{
+			     color:#fff;
+			     margin-left:0.2rem;
+			     float: left;
+			}
+			.nav_right2{
+			     float: left;
+			     margin-left:0.525rem;
+			     margin-right:0.625rem;
+			     color:#fff;
+			}
+			.nav_right1{
+			     float: right;
+			}
+			.nav_right1 span{
+			     font-size:0.5rem;
+			     height:0.9rem;
+			     line-height: 0.9rem;
+			}
+			.nav2{
+			     margin-top:0.65rem;
+			}
+			.nav2 a span{
+			     color:#232B2F;
+			}
+			.p1{
+			     color:#fff;
+			     font-size:0.6rem;
+			}
+			.return{
+			     float: left;
+			     margin-left:0.6rem;
+			     margin-right: 1.2rem;
+			     font-size:0.6rem;
+			}
+			.return:hover{
+				color:#fff;
+			}
+			.ShoppingCart{
+			     float: right;
+			     margin-right:1.05rem;
+			     margin-top: -0.85rem;
+			     font-size:0.75rem;
+			}
+			.ShoppingCart:hover{
+				color:#fff;
+			}
+			.p2{
+			     background-color:#fff;
+			     border-radius:0.25rem;
+			     height:0.45rem;
+			     width:0.6rem;
+			     font-size:0.3rem;
+			     font-weight: bold;
+			     text-align:center;
+			     float: right;
+			     margin-top:-0.95rem;
+			     margin-right:0.6rem;
+			}
+			.nav3{
+				margin-top: 0.9rem;
+			}
+			.nav3 p a{
+			     float: left;
+			     height:1.575rem;
+			     width:7.175rem;
+			     text-align:center;
+			     line-height:1.575rem;
+			     color:#fff;
+			     font-weight: bold;
+			     background-color:#2D393F;
+			}
+			.nav3 p a:hover{
+				background-color:#F5846A;
+			}
+			.p3{
+			     border-radius:0.075rem;
+			     font-size: 0.4rem;
+			     margin-left: 0.6rem;
+			}
+			.p4{
+			     border-radius:0.075rem;
+			     font-size: 0.4rem;
+			     margin-left:0.45rem;
+			}
+			.top1{
+				height:14.8rem;
+				width:14.8rem;
+				background-color:#fff;
+				margin:0.65rem 0.6rem 0 0.6rem;
+ 				border-radius:0.2rem;
+ 				position: relative;
+			}
+			.p7{
+				height:11.8rem;
+				display:inline-block;
+			}
+ 			.top1 a img{
+ 				height:100%;
+ 				width:100%;
+ 				overflow: hidden;
+ 			}
+ 			.top1_left{
+ 				position: absolute;
+				top:0; left:0;
+				margin-top:10.85rem;
+ 				margin-left: 1.05rem;
+
+ 			}
+ 			.top1_left a{
+				background-color:#D0D2D3;
+				height:0.2rem;
+ 				width:0.5rem;
+ 				border-radius:0.05rem;
+ 				float: left;
+ 				display:inline-block;
+ 				margin-right: 0.175rem;
+ 			}
+ 			.top1_left a:hover{
+				background-color:#67B0D6;
+ 			}
+ 			.p5{
+ 				font-weight: bold;
+				font-size:0.5rem;
+				height:3rem;
+ 				line-height: 3rem;
+ 				margin-left:1.1rem;
+ 				display:inline-block;
+ 				float: left;
+			}
+			.p6{
+				font-size:0.55rem;
+				background-color:#BFBFC4;
+				height:1.675rem;
+ 				line-height: 1.675rem;
+ 				width:3.6rem;
+ 				border-radius:0.075rem;
+ 				text-align:center;
+ 				color:#fff;
+ 				display:inline-block;
+ 				float: right;
+ 				margin:0.675rem 0.65rem 0 0;
+			}
+			.p6:hover{
+				background-color:#F5846A;
+			}
+			.top2{
+				margin-top:0.775rem;
+				background-color:#fff;
+				height:2.475rem;
+				margin:0.75rem 0.6rem 0.9rem 0.6rem;
+				border-radius:0.175rem; 
+			}
+			.p8{
+				font-size:0.6rem;
+				font-weight:bold;
+				color:#A6A6AD;
+				height:2.475rem; 
+				line-height:2.475rem;
+				margin:0 1.1rem;
+			}
+			.p8 span:hover{
+				color:#F6846A;
+			}
+			.p9{
+				font-size:0.5rem;
+				font-weight:bold;
+				height:2.475rem; 
+				line-height:2.475rem;
+			}
+			.top3{
+				background-color:#fff;
+				height:12.875rem;
+				border-radius:0.175rem;
+				margin:0 0.6rem;
+			}
+			.top3_box1 span{
+				font-size:0.65rem;
+				
+			}
+			.p10{
+				margin:0.875rem 0 0 5.85rem;
+			}
+			.top3_box1{
+				margin-bottom: 1.1rem;
+			}
+			.top3_box1 p{
+				font-size:0.5rem;
+				color:#A6A6AD; 
+				font-weight:bold;
+				text-align:center;
+			}
+			.top3_box1 ul{
+				margin:1rem 4.11rem;
+			}
+			.top3_box1 ul li a{
+				color:#fff;
+				font-size:0.7rem;
+				height:1.775rem;
+				line-height:1.755rem;
+				float: left;
+				text-align:center;
+			}
+			.top3_box1 ul li a:hover{
+				color:#fff;
+			}
+			.p11{
+				background-color:#F0C9CE;
+				height:1.775rem;
+				width:1.775rem;
+				border-radius:0.1rem;
+				margin-right:0.625rem;
+			}
+			.p12{
+				background-color:#AF687A;
+				height:1.775rem;
+				width:1.775rem;
+				border-radius:0.1rem;
+				margin-right:0.625rem;
+			}
+			.p13{
+				background-color:#87A6B2;
+				height:1.775rem;
+				width:1.775rem;
+				border-radius:0.1rem;
+			}
+			.p14{
+
+			}
+			.top3_box2{
+				height:5.35rem;
+ 				width:11.35rem;
+ 				border-top:0.025rem  solid #ccc;
+ 				margin-top: 3.825rem;
+ 				text-align:center;
+ 				margin-left: 1.775rem;
+			}
+			.top3_box2 span{
+				font-size:0.65rem;
+				font-weight:bold;
+				text-align:center;
+			}
+			.top3_box2 p{
+				font-size:0.65rem;
+				font-weight:bold;
+				color:#ccc;
+				text-align:center;
+			}
+			.top3_box2 ul{
+				margin-bottom:0.625rem;
+				margin-top: 0.65rem;
+			}
+			.top3_box2 ul li a{
+				background-color:#DADADE;
+				height:1.775rem;
+				line-height:1.775rem;
+				width:1.775rem;
+				float: left;
+				border-radius:0.05rem;
+				text-align:center;
+				margin-right:0.6em;
+				display:inline-block;
+				font-size: 18px;
+				font-weight:bold;
+			}
+			.top3_box2 ul li a:hover{
+				background-color:#67B0D6;
+				color:#fff;
+			}
+			.top4{
+				margin:0 0.6rem;
+			}
+			.top4 p{
+				font-weight:bold;
+				font-size: 0.4rem;
+				height:1.5rem;
+				line-height:1.5rem;
+				width:6.95rem;
+				background-color:#3A4144;
+				border-radius:0.075rem;
+				text-align:center;
+				color:#FFF;
+				margin: 1.55rem  4.05rem;
+			}
+			.top5{
+				margin:0 0.6rem;
+				border-top:0.05rem solid #ccc;
+			} 
+			.top5 p{
+				font-size:18px;
+				margin-top: -0.38rem;
+				background-color:#E8E8E8;
+				width:4rem;
+			}
+			.top5 ul li a{
+				
+				color:#fff;
+				border-radius:50%;
+				display:inline-block;
+				float: left;
+				font-size:0.8rem;
+				font-weight:bold;
+				margin-top:1.35rem;
+			}
+			.top5 ul li a{
+				height:1.85rem;
+				width:1.85rem;
+				text-align:center;
+				line-height:1.85rem;
+			}
+			.p15{
+				background-color:#56C2EA;
+			}
+			.p16{
+				background-color:#3B63B6;
+			}
+			.p17{
+				background-color: #E53E59;
+			}
+			.z1{
+				border:0.25rem solid;
+				border-color:#fff transparent transparent transparent;
+				margin:1em -1rem 0 0;
+				display:inline-block;
+				float: left;
+			}
+			.z2{
+				background-color:#fff;
+				border-radius:0.075rem;
+				float: left;
+				height:1rem;
+				line-height:1rem;
+				width:1.5rem;
+				text-align:center;
+				font-size:0.3rem;
+				margin-top:1.7rem;
+				margin-left:0.6rem;	
+			}
+			.top5 ul li{
+				margin-left: 1.1rem;
+				display:inline-block;
+			}
+        </style>
+    </head>
+    <body>
+    <div class="box gwidth">
+    	<div class="nav">
+			<div class="nav1">
+				<div class="nav_right1">
+					<span class="iconfont icon-wifi"></span>
+					<span class="iconfont icon-shuju"></span>
+					<span class="iconfont icon-dianliang"></span>
+					<span><p class="nav_right2">17:19</p></span>
+				</div>
+			</div>
+			<div class="nav2">
+				<a href="#"><span class="iconfont icon-fanhuijiantou return"></span></a>
+				<p class="p1">Woman, Dresses</p>
+				<a href="#"><span class="iconfont icon-gouwuche-shixin ShoppingCart"></span></a>
+				<p class="p2">3</p>
+			</div>
+			<div class="nav3">
+				<p><a href="#" class="p3">ADD TO WISHLIST</a></p>
+				<p><a href="#" class="p4">ADD TO CART</a></p>
+			</div>
+		</div>
+		<div class="top">
+			<div class="top1">
+				<a href="#" class="p7"><img src="images/lunbo.png"></a>
+				<div class="top1_left">
+					<a href="#"></a>
+					<a href="#"></a>
+					<a href="#"></a>
+				</div>
+				<a href="#" class="p5">Elegant Pink Dresses</a>
+				<p><a href="#" class="p6">$605,00</a></p>
+			</div>
+			<div class="top2">
+				<a href="#" class="p8"><span class="iconfont icon-jiahao"></span></a>
+				<a href="#" class="p9">Description</a>
+			</div>
+			<div class="top3">
+				<div class="top3_box1">
+					<span class="iconfont icon-icon7 p10"></span>
+					<span>Colour :</span>
+					<p>Choose a colour for item</p>
+					<ul>
+						<li><a href="#" class="iconfont icon-duigou p11"></a></li>
+						<li><a href="#" class="iconfont icon-duigou p12"></a></li>
+						<li><a href="#" class="iconfont icon-duigou p13"></a></li>
+					</ul>
+				</div>
+				<div class="top3_box2">
+					<span class="iconfont icon-yijia p14"></span>
+					<span>Size :</span>
+					<p>Size available for this item</p>
+					<ul>
+						<li><a href="#" class="">6</a></li>
+						<li><a href="#" class="">8</a></li>
+						<li><a href="#" class="">10</a></li>
+						<li><a href="#" class="">12</a></li>
+						<li><a href="#" class="" style="margin-right:0;">14</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="top4">
+				<p>Add to Cart</p>
+			</div>
+			<div class="top5">
+				<p>SHARE ON</p>
+				<ul>
+					<li style="margin-left:0;">
+						<a href="#" class="iconfont icon-icon-test p15"></a>
+						
+						<span class="z2">205</span>
+						<span class="z1"></span>
+					</li>
+					<li>
+						<a href="#" class="iconfont icon-f p16"></a>
+						<span class="z2">332</span>
+						<span class="z1"></span>
+					</li>
+					<li>
+						<a href="#" class="p17">&phi;</a>
+						<span class="z2">112</span>
+						<span class="z1"></span>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+	</div>
+    </body>
+</html>
